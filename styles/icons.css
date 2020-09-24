@@ -1,0 +1,77 @@
+:root {
+  --icon-color: #bbbbbb;
+  --icon-size: 20px;
+  --icon-margin: 8px;
+}
+
+.closed-folder::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f07b";
+  font-size: var(--icon-size);
+  color:  var(--icon-color);
+  margin-right: var(--icon-margin);
+}
+
+.opened-folder::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f07c";
+  font-size: var(--icon-size);
+  color:  var(--icon-color);
+  margin-right: var(--icon-margin);
+}
+
+.checked-square::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f14a";
+  font-size: var(--icon-size);
+  color: var(--icon-color);
+  margin-right: var(--icon-margin);
+}
+
+.unchecked-square::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c8";
+  font-size: var(--icon-size);
+  color:  var(--icon-color);
+  margin-right: var(--icon-margin);
+}
+
+.checked-circle::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f058";
+  font-size: var(--icon-size);
+  color:  var(--icon-color);
+  margin-right: var(--icon-margin);
+}
+
+.unchecked-circle::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  font-size: var(--icon-size);
+  color:  var(--icon-color);
+  margin-right: var(--icon-margin);
+}
+
+.arrow-right::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f152";
+  font-size: var(--icon-size);
+  color:  var(--icon-color);
+  margin-right: var(--icon-margin);
+}
+
+.arrow-down::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f150";
+  font-size: var(--icon-size);
+  color:  var(--icon-color);
+  margin-right: var(--icon-margin);
+}
+
+.file::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1c1";
+  font-size: var(--icon-size);
+  color:  var(--icon-color);
+  margin-right: var(--icon-margin);
+}

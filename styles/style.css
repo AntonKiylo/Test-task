@@ -1,0 +1,93 @@
+@import "icons.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.block-decoration {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 
+  "main-menu main-menu"
+  "additional-menu bread-crumbs"
+  "additional-menu content";
+  grid-template-rows: 35px 35px 1fr;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/********** main-menu **********/ 
+#main-menu {
+  grid-area: main-menu;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  background-color: #f0f0f0;
+}
+
+#main-menu a {
+  margin: 0 5px;
+}
+
+/********** additional-menu **********/
+#additional-menu { 
+  grid-area: additional-menu;
+  overflow: auto;
+  padding: 6px;
+}
+
+#additional-menu ul {
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+#additional-menu ul li {
+  margin: 4px;
+}
+
+/********** bread-crumbs **********/
+#bread-crumbs { 
+  grid-area: bread-crumbs;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#bread-crumbs a:last-child {
+  color: gray;
+  text-decoration: none;
+}
+
+/********** content **********/
+#content { 
+  grid-area: content;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#content > div {
+  margin: 20px;
+  text-align: center;
+}
+
+#content .image-block {
+  min-width: 250px;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+#content div img {
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
+}
